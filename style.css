@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 80%;
+  /* max-width: 1200px; */
+}
+
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  width: 20%;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  border-radius: 50px;
+}
+
+button:hover {
+  transition: ease-in-out 0.2s;
+  background-color: white;
+  color: rgb(29, 29, 29);
+}
+
+.todo-input {
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.todo-input:focus::placeholder {
+  color: transparent;
+}
+
+.todo-input::placeholder {
+  font-size: 1.2rem;
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+.check-div {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .content {
+    width: 30%;
+  }
+}
